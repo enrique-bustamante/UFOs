@@ -70,29 +70,32 @@ console.log(filters)
   filterTable(filters);
 }
 
+  // Define the filterTable function
   function filterTable(someArray) {
-//
-//  // Set the filteredData to the tableData
+
+    // Set the filteredData to the tableData
     let filteredData = tableData;
-//  // Loop through all of the filters and keep any data that
-//  // matches the filter values
+    // Loop through all of the filters and keep any data that
+    // matches the filter values
     for (var index in filters) { 
       var item = filters[index]
       var filterValue = item['inputValue'];
       var Id = item['dictId'];
       filteredData = filteredData.filter(rows => rows[Id] === filterValue);
 
-//    // Finally, rebuild the table using the filtered Data
+    // Finally, rebuild the table using the filtered Data
     buildTable(filteredData);
     } 
   }
+
+// clears the filters array and resets the table to include all data
 function clearClick() {
     buildTable(tableData);
     filters = {};
     console.log(filters);
 }
 
-// Attach an event to listen for the form button
+// Attach an event to listen for the form entries
 d3.selectAll("#filter-btn").on("click", updateFilters);
 d3.selectAll("#clear-btn").on("click", clearClick);
 d3.selectAll("#datetime").on("change", updateFilters);
