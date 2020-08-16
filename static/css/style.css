@@ -7,3 +7,16 @@ body {
   background-size: 100% 100%;
   text-align: center;
 }
+.btn {
+    border: 2px solid white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  form {
+    overflow: hidden;
+  }
+  input {
+    float: right;
+    clear: both;
+  }

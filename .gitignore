@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+index_v2.html
+app_v2.py
+Week 11/

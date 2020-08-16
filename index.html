@@ -13,15 +13,15 @@
 <body class="bg-dark">
     <div class="wrapper">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
-            <a href="index.html" class="navbar-brand">UFO Sightings</a>
+            <a href="index.html" class="navbar-brand" style="color: aqua">UFO Sightings</a>
         </nav>
         <div class="jumbotron">
-            <h1 class="display-4">The Truth Is Out There</h1>
+            <h1 class="display-4" style="color: lightsteelblue">The Truth Is Out There</h1>
         </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-                    <h3>UFO Sightings: Fact or Fancy? <small>Ufologists Weigh In</small></h3>
+                    <h3 style="color: tomato">UFO Sightings: Fact or Fancy? <small>Ufologists Weigh In</small></h3>
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -49,14 +49,33 @@
             <div class="row">
                 <div class="col-md-3">
                     <form class="bg-dark">
-                        <p>Filter Search</p>
+                        <p style="text-align: center">Filter Search</p>
                         <ul class="list-group bg-dark">
                             <li class="list-group-item bg-dark">
                                 <label for="date">Enter Date</label>
-                                <input type="text" placeholder="1/10/2010" id="datetime" />
+                                <input type="text" placeholder="1/1/2010" id="datetime" />
+                            </li>
+                            <li class="list-group-item bg-dark" >
+                                <label for="city">Enter City</label>
+                                <input type="text" placeholder="benton" id="city" />
                             </li>
                             <li class="list-group-item bg-dark">
-                                <button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+                                <label for="state">Enter State</label>
+                                <input type="text" placeholder="ar" id="state" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="country">Enter Country</label>
+                                <input type="text" placeholder="us" id="country" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <label for="shape">Enter Shape</label>
+                                <input type="text" placeholder="circle" id="shape" />
+                            </li>
+                            <li class="list-group-item bg-dark">
+                                <div class="row">
+                                    <button id="filter-btn" type="button" class="btn btn-dark">Re-apply Filter</button>
+                                    <button id="clear-btn" type="button" class="btn btn-dark">Undo Filter</button>
+                                </div>
                             </li>
                         </ul>
                     </form>
@@ -81,8 +100,9 @@
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-    <script src="static/js/data.js"></script>
-    <script src="static/js/app.js"></script>
+     <script src="static/js/data.js"></script>   
+     <script src="static/js/app.js"></script>
+
 </body>
 
 </html>
